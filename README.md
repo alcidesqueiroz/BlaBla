@@ -66,7 +66,7 @@ Contato
 Estou aberto a sugestões, elogios, críticas ou qualquer outro tipo de comentário. 
 
 *	Grupo de discussão: https://groups.google.com/forum/#!forum/blabla-gem
-*	Twitter: @alcidesqueiroz
+*	Twitter: [@alcidesqueiroz](http://www.twitter.com/alcidesqueiroz)
 
 Licença
 -------
