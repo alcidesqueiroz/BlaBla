@@ -1,5 +1,7 @@
 module BlaBla
   class CNPJ
+    # Gera um número válido de CNPJ
+    # @return [String] o número de CNPJ
     def self.numero
       numeros = []
 
@@ -30,6 +32,8 @@ module BlaBla
       numeros.join + d1.to_s + d2.to_s
     end
 
+    # Gera um número válido de CNPJ no formato ##.###.###/####-##
+    # @return [String] o número de CNPJ formatado
     def self.formatado
       numeros = numero.split ''
       [numeros[0..1], ".", numeros[2..4], ".", numeros[5..7], "/", numeros[8..11], "-", numeros[12..13]].join

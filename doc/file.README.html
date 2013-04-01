@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+  File: README
+  
+    &mdash; Documentação da Gem BlaBla
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: README</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><div id='filecontents'><h1>BlaBla</h1>
+
+<h2>O Que é?</h2>
+
+<p>BlaBla é uma gem para geração de dados fictícios, porém verossímeis, para aplicações em português do Brasil.</p>
+
+<p>Sim, eu conheço o Faker, e sei que é possível definir o default_locale para pt-BR. 
+Porém, para a realidade das nossas aplicações, o Faker fica devendo muita coisa.</p>
+
+<h3>A versão inicial(0.0.1) já conta com:</h3>
+
+<ul>
+<li>  Gerador de CPF</li>
+<li>  Gerador de CNPJ</li>
+<li>  Gerador de Cartão de Crédito</li>
+<li>  Gerador de Bacon Ipsum</li>
+<li>  Gerador de Lorem Ipsum</li>
+<li>  Gerador de Nomes Próprios de Pessoas</li>
+</ul>
+
+<h3>Para as próximas versões devem vir:</h3>
+
+<ul>
+<li>  Gerador de CEP<br></li>
+<li>  Gerador de Endereços</li>
+<li>  Gerador de URLs</li>
+<li>  Gerador de Email</li>
+<li>  Gerador de ISBN</li>
+<li>  Gerador de Telefones</li>
+<li>  Gerador de Senhas</li>
+<li>  Entre outras coisas ... =)</li>
+</ul>
+
+<h2>Por que não o Faker?</h2>
+
+<p>O Faker é uma ótima gem, porém os dados gerados não parecem muito &quot;realísticos&quot; em aplicações brasileiras, possui poucos geradores, e os mesmos não são focados em nossa realidade.</p>
+
+<h2>Instalando</h2>
+
+<pre class="code bash"><code class="bash">sudo gem install blabla
+</code></pre>
+
+<h2>Uso</h2>
+
+<pre class="code ruby"><code class="ruby"><span class='const'>BlaBla</span><span class='op'>::</span><span class='const'>CPF</span><span class='period'>.</span><span class='id identifier rubyid_numero'>numero</span>  <span class='comment'>#=&gt; &quot;67021487983&quot;
+</span>
+<span class='const'>BlaBla</span><span class='op'>::</span><span class='const'>CNPJ</span><span class='period'>.</span><span class='id identifier rubyid_formatado'>formatado</span>  <span class='comment'>#=&gt; &quot;51.777.676/0001-27&quot;
+</span>
+<span class='const'>BlaBla</span><span class='op'>::</span><span class='const'>CartaoCredito</span><span class='period'>.</span><span class='id identifier rubyid_formatado'>formatado</span><span class='lparen'>(</span><span class='symbol'>:bandeira</span> <span class='op'>=&gt;</span> <span class='symbol'>:visa</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; &quot;4398 2852 4214 7717&quot;
+</span>
+<span class='const'>BlaBla</span><span class='op'>::</span><span class='const'>Pessoa</span><span class='period'>.</span><span class='id identifier rubyid_nome'>nome</span>  <span class='comment'>#=&gt; &quot;Viviane Alves Almeida&quot;
+</span>
+<span class='const'>BlaBla</span><span class='op'>::</span><span class='const'>Bacon</span><span class='period'>.</span><span class='id identifier rubyid_frase'>frase</span>  <span class='comment'>#=&gt; &quot;Flank round belly chuck mignon jowl ham beef mignon.&quot;
+</span></code></pre>
+
+<h2>Contribuindo</h2>
+
+<p>Se você deseja contribuir, faça um Fork do <a href="https://github.com/alcidesqueiroz/faker">repo</a> no Github, faça as suas alterações e mande um pull request.</p>
+
+<p><strong>Nota importante</strong></p>
+
+<p>Rode <code>bundle install</code> e <code>rspec</code> para confirmar que os testes estão passando.</p>
+
+<h2>Contato</h2>
+
+<p>Estou aberto a sugestões, elogios, críticas ou qualquer outro tipo de comentário. </p>
+
+<ul>
+<li>  Grupo de discussão: <a href="https://groups.google.com/forum/#!forum/blabla-gem">https://groups.google.com/forum/#!forum/blabla-gem</a></li>
+<li>  Twitter: <a href="http://www.twitter.com/alcidesqueiroz">@alcidesqueiroz</a></li>
+</ul>
+
+<h2>Licença</h2>
+
+<p>Esse código é livre para ser usado dentro dos termos da licença MIT license</p>
+</div></div>
+
+    <div id="footer">
+  Generated on Sun Mar 31 21:21:41 2013 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.5.2 (ruby-1.9.3).
+</div>
+
+  </body>
+</html>

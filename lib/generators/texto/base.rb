@@ -2,12 +2,18 @@
 module BlaBla
   module Texto
     class Base 
+      # Retorna uma palavra aleatória, oriunda do vocabulário do gerador (por exemplo, o gerador de Lorem Ipsum)
+      #
+      # @return [String] uma palavra
       def self.palavra
         tamanho = BlaBla::Util.sortear_por_peso peso_por_tamanho_palavra
 
         palavras_gerador.reject{|p| p.size < tamanho.min || p.size > tamanho.max}.sample
       end
 
+      # Retorna um vetor de palavras aleatórias (geradas usando o método palavra), com a quantidade especificada
+      # @param quantidade [Integer] a quantidade de palavras desejada
+      # @return [Array] um vetor de palavras
       def self.palavras quantidade
         sorteadas = []
 
@@ -18,6 +24,10 @@ module BlaBla
         sorteadas
       end
 
+      # Retorna uma frase com palavras aleatórias, que podem ou não 
+      # iniciar com o começo padrão do gerador (por ex: Lorem ipsum dolor sit amet...)
+      # @param params [Hash] Opções: ":comeco_padrao" > define se a frase deve iniciar com começo padrão do gerador
+      # @return [String] uma frase com palavras aleatórias
       def self.frase params={}
         raise "Parâmetros inválidos" if params.class != Hash
 
@@ -50,12 +60,19 @@ module BlaBla
         (palavras_frase.join(" ") + ".").gsub(" ,", ",").capitalize
       end
 
+      # Retorna um vetor de frases com palavras aleatórias, com a quantidade especificada
+      # @param quantidade [Integer] a quantidade de frases desejada
+      # @return [Array] um vetor de frases
       def self.frases quantidade
         sorteadas = []
         1.upto(quantidade) { sorteadas << frase }
         sorteadas
       end
 
+      # Retorna um parágrafo com palavras aleatórias, que podem ou não 
+      # iniciar com o começo padrão do gerador (por ex: Lorem ipsum dolor sit amet...)
+      # @param params [Hash] Opções: ":comeco_padrao" > define se o parágrafo deve iniciar com começo padrão do gerador
+      # @return [String] um parágrafo com palavras aleatórias
       def self.paragrafo params={}
         raise "Parâmetros inválidos" if params.class != Hash
         tamanho = rand(4..10)
@@ -69,6 +86,9 @@ module BlaBla
         frases_paragrafo.join " "
       end
 
+      # Retorna um vetor de parágrafos com palavras aleatórias, com a quantidade especificada
+      # @param quantidade [Integer] a quantidade de parágrafos desejada
+      # @return [Array] um vetor de parágrafos
       def self.paragrafos quantidade
         sorteados = []
         1.upto(quantidade) { sorteados << paragrafo }

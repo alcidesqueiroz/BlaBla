@@ -12,6 +12,10 @@ module BlaBla
     CODIGO_VISA = 4
     CODIGO_MASTER = 5
 
+
+    # Gera um número válido de Cartão de Crédito
+    # @param params [Hash] Opções: ":bandeira" > :amex, :visa ou :master
+    # @return [String] o número de Cartão de Crédito
     def self.numero params={}
       numeros = []
       numeros_verificacao = []
@@ -71,6 +75,8 @@ module BlaBla
       numeros.join
     end
 
+    # Gera um número válido de Cartão de Crédito no formato #### #### #### ####
+    # @return [String] o número de Cartão de Crédito formatado
     def self.formatado params={}
       numeros = numero(params).split ''
       [numeros[0..3], " ", numeros[4..7], " ", numeros[8..11], " ", numeros[12..15]].join

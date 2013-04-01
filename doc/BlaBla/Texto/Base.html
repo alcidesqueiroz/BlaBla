@@ -1,0 +1,926 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: BlaBla::Texto::Base
+  
+    &mdash; Documentação da Gem BlaBla
+  
+</title>
+
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../../';
+  framesUrl = "../../frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../../_index.html">Index (B)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../BlaBla.html" title="BlaBla (module)">BlaBla</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Texto.html" title="BlaBla::Texto (module)">Texto</a></span></span>
+     &raquo; 
+    <span class="title">Base</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: BlaBla::Texto::Base
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">BlaBla::Texto::Base</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/generators/texto/base.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<div id="subclasses">
+  <h2>Direct Known Subclasses</h2>
+  <p class="children"><span class='object_link'><a href="../Bacon.html" title="BlaBla::Bacon (class)">Bacon</a></span>, <span class='object_link'><a href="../Lorem.html" title="BlaBla::Lorem (class)">Lorem</a></span></p>
+</div>
+
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#comeco_padrao-class_method" title="comeco_padrao (class method)">+ (Object) <strong>comeco_padrao</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#frase-class_method" title="frase (class method)">+ (String) <strong>frase</strong>(params = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Retorna uma frase com palavras aleatórias, que podem ou não 
+iniciar com o começo padrão do gerador (por ex: Lorem ipsum dolor sit amet...).</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#frases-class_method" title="frases (class method)">+ (Array) <strong>frases</strong>(quantidade) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Retorna um vetor de frases com palavras aleatórias, com a quantidade especificada.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#palavra-class_method" title="palavra (class method)">+ (String) <strong>palavra</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Retorna uma palavra aleatória, oriunda do vocabulário do gerador (por exemplo, o gerador de Lorem Ipsum).</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#palavras-class_method" title="palavras (class method)">+ (Array) <strong>palavras</strong>(quantidade) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Retorna um vetor de palavras aleatórias (geradas usando o método palavra), com a quantidade especificada.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#palavras_gerador-class_method" title="palavras_gerador (class method)">+ (Object) <strong>palavras_gerador</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#paragrafo-class_method" title="paragrafo (class method)">+ (String) <strong>paragrafo</strong>(params = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Retorna um parágrafo com palavras aleatórias, que podem ou não 
+iniciar com o começo padrão do gerador (por ex: Lorem ipsum dolor sit amet...).</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#paragrafos-class_method" title="paragrafos (class method)">+ (Array) <strong>paragrafos</strong>(quantidade) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Retorna um vetor de parágrafos com palavras aleatórias, com a quantidade especificada.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="comeco_padrao-class_method">
+  
+    + (<tt>Object</tt>) <strong>comeco_padrao</strong> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+98
+99
+100</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/generators/texto/base.rb', line 98</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_comeco_padrao'>comeco_padrao</span>
+  <span class='const'>BlaBla</span><span class='period'>.</span><span class='id identifier rubyid_strings'>strings</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>texto&gt;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_generator_name'>generator_name</span><span class='rbrace'>}</span><span class='tstring_content'>&gt;comeco_padrao</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="frase-class_method">
+  
+    + (<tt>String</tt>) <strong>frase</strong>(params = {}) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Retorna uma frase com palavras aleatórias, que podem ou não 
+iniciar com o começo padrão do gerador (por ex: Lorem ipsum dolor sit amet...)</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>params</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>Opções: &quot;:comeco_padrao&quot; &gt; define se a frase deve iniciar com começo padrão do gerador</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>uma frase com palavras aleatórias</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/generators/texto/base.rb', line 31</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_frase'>frase</span> <span class='id identifier rubyid_params'>params</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Parâmetros inválidos</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_params'>params</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span> <span class='op'>!=</span> <span class='const'>Hash</span>
+
+  <span class='id identifier rubyid_frase'>frase</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_tamanho'>tamanho</span> <span class='op'>=</span> <span class='int'>7</span><span class='op'>..</span><span class='int'>16</span>
+
+
+  <span class='kw'>if</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:comeco_padrao</span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_frase'>frase</span> <span class='op'>=</span> <span class='id identifier rubyid_comeco_padrao'>comeco_padrao</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> </span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_tamanho'>tamanho</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_comeco_padrao'>comeco_padrao</span><span class='period'>.</span><span class='id identifier rubyid_split'>split</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span> <span class='op'>+</span> <span class='int'>4</span><span class='rparen'>)</span><span class='op'>..</span><span class='int'>16</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_tamanho'>tamanho</span> <span class='op'>=</span> <span class='id identifier rubyid_rand'>rand</span><span class='lparen'>(</span><span class='id identifier rubyid_tamanho'>tamanho</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_tem_virgula'>tem_virgula</span> <span class='op'>=</span> <span class='kw'>true</span>
+  
+  <span class='comment'>#frases com menos de dez palavras poderão não possuir vírgula
+</span>  <span class='id identifier rubyid_tem_virgula'>tem_virgula</span> <span class='op'>=</span> <span class='id identifier rubyid_rand'>rand</span><span class='lparen'>(</span><span class='int'>1</span><span class='op'>..</span><span class='int'>3</span><span class='rparen'>)</span> <span class='op'>!=</span> <span class='int'>3</span> <span class='kw'>if</span> <span class='id identifier rubyid_tamanho'>tamanho</span> <span class='op'>&lt;</span> <span class='int'>10</span>
+
+  <span class='kw'>if</span> <span class='id identifier rubyid_tem_virgula'>tem_virgula</span>
+    <span class='id identifier rubyid_posicao_virgula'>posicao_virgula</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_tamanho'>tamanho</span> <span class='op'>/</span> <span class='int'>2</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_rand'>rand</span><span class='lparen'>(</span><span class='int'>0</span><span class='op'>..</span><span class='lparen'>(</span><span class='id identifier rubyid_tamanho'>tamanho</span><span class='op'>/</span><span class='int'>2</span> <span class='op'>-</span> <span class='int'>3</span><span class='rparen'>)</span><span class='rparen'>)</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='id identifier rubyid_rand'>rand</span><span class='lparen'>(</span><span class='int'>1</span><span class='op'>..</span><span class='int'>2</span><span class='rparen'>)</span><span class='op'>==</span><span class='int'>2</span> <span class='op'>?</span> <span class='int'>1</span><span class='op'>:</span><span class='op'>-</span><span class='int'>1</span><span class='rparen'>)</span> 
+    
+    <span class='kw'>if</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:comeco_padrao</span><span class='rbracket'>]</span>
+      <span class='id identifier rubyid_tamanho_comeco_padrao'>tamanho_comeco_padrao</span> <span class='op'>=</span> <span class='id identifier rubyid_comeco_padrao'>comeco_padrao</span><span class='period'>.</span><span class='id identifier rubyid_split'>split</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span>
+      <span class='id identifier rubyid_posicao_virgula'>posicao_virgula</span> <span class='op'>=</span> <span class='id identifier rubyid_tamanho'>tamanho</span> <span class='op'>-</span> <span class='id identifier rubyid_rand'>rand</span><span class='lparen'>(</span><span class='int'>3</span><span class='op'>..</span><span class='lparen'>(</span><span class='id identifier rubyid_tamanho'>tamanho</span><span class='op'>-</span><span class='id identifier rubyid_tamanho_comeco_padrao'>tamanho_comeco_padrao</span><span class='rparen'>)</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_posicao_virgula'>posicao_virgula</span> <span class='op'>&lt;</span> <span class='id identifier rubyid_tamanho_comeco_padrao'>tamanho_comeco_padrao</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_palavras_frase'>palavras_frase</span> <span class='op'>=</span> <span class='id identifier rubyid_frase'>frase</span><span class='period'>.</span><span class='id identifier rubyid_split'>split</span> <span class='op'>+</span> <span class='id identifier rubyid_palavras'>palavras</span><span class='lparen'>(</span><span class='id identifier rubyid_tamanho'>tamanho</span> <span class='op'>-</span> <span class='id identifier rubyid_frase'>frase</span><span class='period'>.</span><span class='id identifier rubyid_split'>split</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_palavras_frase'>palavras_frase</span><span class='period'>.</span><span class='id identifier rubyid_insert'>insert</span> <span class='id identifier rubyid_posicao_virgula'>posicao_virgula</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>,</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_tem_virgula'>tem_virgula</span>
+  <span class='lparen'>(</span><span class='id identifier rubyid_palavras_frase'>palavras_frase</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> </span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>.</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> ,</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>,</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_capitalize'>capitalize</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="frases-class_method">
+  
+    + (<tt>Array</tt>) <strong>frases</strong>(quantidade) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Retorna um vetor de frases com palavras aleatórias, com a quantidade especificada</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>quantidade</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>a quantidade de frases desejada</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>um vetor de frases</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+66
+67
+68
+69
+70</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/generators/texto/base.rb', line 66</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_frases'>frases</span> <span class='id identifier rubyid_quantidade'>quantidade</span>
+  <span class='id identifier rubyid_sorteadas'>sorteadas</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+  <span class='int'>1</span><span class='period'>.</span><span class='id identifier rubyid_upto'>upto</span><span class='lparen'>(</span><span class='id identifier rubyid_quantidade'>quantidade</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='id identifier rubyid_sorteadas'>sorteadas</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_frase'>frase</span> <span class='rbrace'>}</span>
+  <span class='id identifier rubyid_sorteadas'>sorteadas</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="palavra-class_method">
+  
+    + (<tt>String</tt>) <strong>palavra</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Retorna uma palavra aleatória, oriunda do vocabulário do gerador (por exemplo, o gerador de Lorem Ipsum)</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>uma palavra</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+8
+9
+10
+11
+12</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/generators/texto/base.rb', line 8</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_palavra'>palavra</span>
+  <span class='id identifier rubyid_tamanho'>tamanho</span> <span class='op'>=</span> <span class='const'>BlaBla</span><span class='op'>::</span><span class='const'>Util</span><span class='period'>.</span><span class='id identifier rubyid_sortear_por_peso'>sortear_por_peso</span> <span class='id identifier rubyid_peso_por_tamanho_palavra'>peso_por_tamanho_palavra</span>
+
+  <span class='id identifier rubyid_palavras_gerador'>palavras_gerador</span><span class='period'>.</span><span class='id identifier rubyid_reject'>reject</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_p'>p</span><span class='op'>|</span> <span class='id identifier rubyid_p'>p</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span> <span class='op'>&lt;</span> <span class='id identifier rubyid_tamanho'>tamanho</span><span class='period'>.</span><span class='id identifier rubyid_min'>min</span> <span class='op'>||</span> <span class='id identifier rubyid_p'>p</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span> <span class='op'>&gt;</span> <span class='id identifier rubyid_tamanho'>tamanho</span><span class='period'>.</span><span class='id identifier rubyid_max'>max</span><span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_sample'>sample</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="palavras-class_method">
+  
+    + (<tt>Array</tt>) <strong>palavras</strong>(quantidade) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Retorna um vetor de palavras aleatórias (geradas usando o método palavra), com a quantidade especificada</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>quantidade</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>a quantidade de palavras desejada</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>um vetor de palavras</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+17
+18
+19
+20
+21
+22
+23
+24
+25</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/generators/texto/base.rb', line 17</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_palavras'>palavras</span> <span class='id identifier rubyid_quantidade'>quantidade</span>
+  <span class='id identifier rubyid_sorteadas'>sorteadas</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+
+  <span class='kw'>while</span> <span class='id identifier rubyid_sorteadas'>sorteadas</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span> <span class='op'>&lt;</span> <span class='id identifier rubyid_quantidade'>quantidade</span> <span class='kw'>do</span> 
+    <span class='id identifier rubyid_sorteada'>sorteada</span> <span class='op'>=</span> <span class='id identifier rubyid_palavra'>palavra</span>
+    <span class='id identifier rubyid_sorteadas'>sorteadas</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_sorteada'>sorteada</span> <span class='kw'>unless</span> <span class='id identifier rubyid_sorteadas'>sorteadas</span><span class='period'>.</span><span class='id identifier rubyid_last'>last</span> <span class='op'>==</span> <span class='id identifier rubyid_sorteada'>sorteada</span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_sorteadas'>sorteadas</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="palavras_gerador-class_method">
+  
+    + (<tt>Object</tt>) <strong>palavras_gerador</strong> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+102
+103
+104</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/generators/texto/base.rb', line 102</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_palavras_gerador'>palavras_gerador</span>
+  <span class='const'>BlaBla</span><span class='period'>.</span><span class='id identifier rubyid_strings'>strings</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>texto&gt;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_generator_name'>generator_name</span><span class='rbrace'>}</span><span class='tstring_content'>&gt;palavras</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="paragrafo-class_method">
+  
+    + (<tt>String</tt>) <strong>paragrafo</strong>(params = {}) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Retorna um parágrafo com palavras aleatórias, que podem ou não 
+iniciar com o começo padrão do gerador (por ex: Lorem ipsum dolor sit amet...)</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>params</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>Opções: &quot;:comeco_padrao&quot; &gt; define se o parágrafo deve iniciar com começo padrão do gerador</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>um parágrafo com palavras aleatórias</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/generators/texto/base.rb', line 76</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_paragrafo'>paragrafo</span> <span class='id identifier rubyid_params'>params</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Parâmetros inválidos</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_params'>params</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span> <span class='op'>!=</span> <span class='const'>Hash</span>
+  <span class='id identifier rubyid_tamanho'>tamanho</span> <span class='op'>=</span> <span class='id identifier rubyid_rand'>rand</span><span class='lparen'>(</span><span class='int'>4</span><span class='op'>..</span><span class='int'>10</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_frases_paragrafo'>frases_paragrafo</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:comeco_padrao</span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_frases_paragrafo'>frases_paragrafo</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_frase'>frase</span><span class='lparen'>(</span><span class='symbol'>:comeco_padrao</span> <span class='op'>=&gt;</span> <span class='kw'>true</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_tamanho'>tamanho</span> <span class='op'>-=</span> <span class='int'>1</span>
+  <span class='kw'>end</span>
+
+  <span class='int'>1</span><span class='period'>.</span><span class='id identifier rubyid_upto'>upto</span><span class='lparen'>(</span><span class='id identifier rubyid_tamanho'>tamanho</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='id identifier rubyid_frases_paragrafo'>frases_paragrafo</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_frase'>frase</span> <span class='rbrace'>}</span>
+  <span class='id identifier rubyid_frases_paragrafo'>frases_paragrafo</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> </span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="paragrafos-class_method">
+  
+    + (<tt>Array</tt>) <strong>paragrafos</strong>(quantidade) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Retorna um vetor de parágrafos com palavras aleatórias, com a quantidade especificada</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>quantidade</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>a quantidade de parágrafos desejada</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>um vetor de parágrafos</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+92
+93
+94
+95
+96</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/generators/texto/base.rb', line 92</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_paragrafos'>paragrafos</span> <span class='id identifier rubyid_quantidade'>quantidade</span>
+  <span class='id identifier rubyid_sorteados'>sorteados</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+  <span class='int'>1</span><span class='period'>.</span><span class='id identifier rubyid_upto'>upto</span><span class='lparen'>(</span><span class='id identifier rubyid_quantidade'>quantidade</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='id identifier rubyid_sorteados'>sorteados</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_paragrafo'>paragrafo</span> <span class='rbrace'>}</span>
+  <span class='id identifier rubyid_sorteados'>sorteados</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Sun Mar 31 21:21:41 2013 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.5.2 (ruby-1.9.3).
+</div>
+
+  </body>
+</html>

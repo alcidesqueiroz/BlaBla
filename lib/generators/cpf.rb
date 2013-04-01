@@ -1,5 +1,7 @@
 module BlaBla
   class CPF
+    # Gera um número válido de CPF
+    # @return [String] o número de CPF
     def self.numero
       numeros = []
 
@@ -27,6 +29,8 @@ module BlaBla
       numeros.join + d1.to_s + d2.to_s
     end
 
+    # Gera um número válido de CPF no formato ###.###.###-##
+    # @return [String] o número de CPF formatado
     def self.formatado
       numeros = numero.split ''
       [numeros[0..2], ".", numeros[3..5], ".", numeros[6..8], "-", numeros[9..10]].join

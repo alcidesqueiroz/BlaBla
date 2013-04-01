@@ -1,0 +1,468 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: BlaBla::CartaoCredito
+  
+    &mdash; Documentação da Gem BlaBla
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../';
+  framesUrl = "../frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (C)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../BlaBla.html" title="BlaBla (module)">BlaBla</a></span></span>
+     &raquo; 
+    <span class="title">CartaoCredito</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: BlaBla::CartaoCredito
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">BlaBla::CartaoCredito</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/generators/cartao_credito.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+  <h2>Constant Summary</h2>
+  
+    <dl class="constants">
+      
+        <dt id="CODIGO_AMEX-constant" class="">CODIGO_AMEX =
+          <div class="docstring">
+  <div class="discussion">
+    <p>Apesar de que seria perfeitamente poss??vel elaborar um algoritmo mais sofisticado,
+que considere os c??digos de cada banco, optei deliberadamente por n??o faz??-lo.<br>
+Afinal, desconhe??o as quest??es legais sobre a gera????o automatizada de dados fict??cios e 
+n??o sei se a divulga????o de tal c??digo infringiria alguma lei.
+Por essa raz??o, limitei-me a gerar n??meros v??lidos e que considerem o c??digo 
+da bandeira apenas (3-&gt; AMEX, 4-&gt; Visa, 5-&gt; MasterCard).
+O uso indevido deste c??digo n??o ?? de responsabilidade de seu autor.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+        </dt>
+        <dd><pre class="code"><span class='int'>3</span></pre></dd>
+      
+        <dt id="CODIGO_VISA-constant" class="">CODIGO_VISA =
+          
+        </dt>
+        <dd><pre class="code"><span class='int'>4</span></pre></dd>
+      
+        <dt id="CODIGO_MASTER-constant" class="">CODIGO_MASTER =
+          
+        </dt>
+        <dd><pre class="code"><span class='int'>5</span></pre></dd>
+      
+    </dl>
+  
+
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#formatado-class_method" title="formatado (class method)">+ (String) <strong>formatado</strong>(params = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Gera um n??mero v??lido de Cart??o de Cr??dito no formato #### #### #### ####.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#numero-class_method" title="numero (class method)">+ (String) <strong>numero</strong>(params = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Gera um n??mero v??lido de Cart??o de Cr??dito.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="formatado-class_method">
+  
+    + (<tt>String</tt>) <strong>formatado</strong>(params = {}) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Gera um n??mero v??lido de Cart??o de Cr??dito no formato #### #### #### ####</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>o n??mero de Cart??o de Cr??dito formatado</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+80
+81
+82
+83</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/generators/cartao_credito.rb', line 80</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_formatado'>formatado</span> <span class='id identifier rubyid_params'>params</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_numeros'>numeros</span> <span class='op'>=</span> <span class='id identifier rubyid_numero'>numero</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_split'>split</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_end'>'</span></span>
+  <span class='lbracket'>[</span><span class='id identifier rubyid_numeros'>numeros</span><span class='lbracket'>[</span><span class='int'>0</span><span class='op'>..</span><span class='int'>3</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> </span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_numeros'>numeros</span><span class='lbracket'>[</span><span class='int'>4</span><span class='op'>..</span><span class='int'>7</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> </span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_numeros'>numeros</span><span class='lbracket'>[</span><span class='int'>8</span><span class='op'>..</span><span class='int'>11</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> </span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_numeros'>numeros</span><span class='lbracket'>[</span><span class='int'>12</span><span class='op'>..</span><span class='int'>15</span><span class='rbracket'>]</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="numero-class_method">
+  
+    + (<tt>String</tt>) <strong>numero</strong>(params = {}) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Gera um n??mero v??lido de Cart??o de Cr??dito</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>params</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>Op????es: &quot;:bandeira&quot; &gt; :amex, :visa ou :master</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>o n??mero de Cart??o de Cr??dito</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/generators/cartao_credito.rb', line 19</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_numero'>numero</span> <span class='id identifier rubyid_params'>params</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_numeros'>numeros</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_numeros_verificacao'>numeros_verificacao</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+
+  <span class='kw'>unless</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:bandeira</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+    <span class='id identifier rubyid_numeros'>numeros</span> <span class='op'>&lt;&lt;</span> <span class='const'>CODIGO_AMEX</span> <span class='kw'>if</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:bandeira</span><span class='rbracket'>]</span> <span class='op'>==</span> <span class='symbol'>:amex</span>
+    <span class='id identifier rubyid_numeros'>numeros</span> <span class='op'>&lt;&lt;</span> <span class='const'>CODIGO_VISA</span> <span class='kw'>if</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:bandeira</span><span class='rbracket'>]</span> <span class='op'>==</span> <span class='symbol'>:visa</span>
+    <span class='id identifier rubyid_numeros'>numeros</span> <span class='op'>&lt;&lt;</span> <span class='const'>CODIGO_MASTER</span> <span class='kw'>if</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:bandeira</span><span class='rbracket'>]</span> <span class='op'>==</span> <span class='symbol'>:master</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_numeros'>numeros</span> <span class='op'>&lt;&lt;</span> <span class='lbracket'>[</span><span class='const'>CODIGO_AMEX</span><span class='comma'>,</span> <span class='const'>CODIGO_VISA</span><span class='comma'>,</span> <span class='const'>CODIGO_MASTER</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_sample'>sample</span>
+  <span class='kw'>end</span>
+
+  <span class='int'>1</span><span class='period'>.</span><span class='id identifier rubyid_upto'>upto</span><span class='lparen'>(</span><span class='int'>16</span> <span class='op'>-</span> <span class='id identifier rubyid_numeros'>numeros</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span><span class='rparen'>)</span> <span class='kw'>do</span>
+    <span class='id identifier rubyid_numeros'>numeros</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_rand'>rand</span><span class='lparen'>(</span><span class='int'>1</span><span class='op'>..</span><span class='int'>9</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_total_pares'>total_pares</span> <span class='op'>=</span> <span class='int'>0</span>
+  <span class='int'>1</span><span class='period'>.</span><span class='id identifier rubyid_upto'>upto</span><span class='lparen'>(</span><span class='int'>16</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_p'>p</span><span class='op'>|</span>
+    <span class='kw'>if</span> <span class='id identifier rubyid_p'>p</span> <span class='op'>%</span> <span class='int'>2</span> <span class='op'>==</span> <span class='int'>0</span>
+      <span class='id identifier rubyid_n'>n</span> <span class='op'>=</span> <span class='id identifier rubyid_numeros'>numeros</span><span class='lbracket'>[</span><span class='id identifier rubyid_p'>p</span><span class='op'>-</span><span class='int'>1</span><span class='rbracket'>]</span>
+      <span class='id identifier rubyid_total_pares'>total_pares</span> <span class='op'>+=</span> <span class='id identifier rubyid_n'>n</span>
+    <span class='kw'>else</span>
+      <span class='id identifier rubyid_n'>n</span> <span class='op'>=</span> <span class='id identifier rubyid_numeros'>numeros</span><span class='lbracket'>[</span><span class='id identifier rubyid_p'>p</span><span class='op'>-</span><span class='int'>1</span><span class='rbracket'>]</span> <span class='op'>*</span> <span class='int'>2</span>
+      <span class='id identifier rubyid_n'>n</span> <span class='op'>-=</span> <span class='int'>9</span> <span class='kw'>if</span> <span class='id identifier rubyid_n'>n</span> <span class='op'>&gt;=</span> <span class='int'>10</span>
+    <span class='kw'>end</span>
+      
+    <span class='id identifier rubyid_numeros_verificacao'>numeros_verificacao</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_n'>n</span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_total'>total</span> <span class='op'>=</span> <span class='id identifier rubyid_numeros_verificacao'>numeros_verificacao</span><span class='period'>.</span><span class='id identifier rubyid_inject'>inject</span><span class='lparen'>(</span><span class='symbol'>:+</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_resto'>resto</span> <span class='op'>=</span> <span class='id identifier rubyid_total'>total</span> <span class='op'>%</span> <span class='int'>10</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_resto'>resto</span> <span class='op'>&gt;</span> <span class='int'>0</span>
+    <span class='kw'>if</span> <span class='id identifier rubyid_resto'>resto</span> <span class='op'>&lt;=</span> <span class='int'>5</span>
+      <span class='id identifier rubyid_subtrair'>subtrair</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_total_pares'>total_pares</span> <span class='op'>&gt;</span> <span class='int'>5</span><span class='rparen'>)</span>
+    <span class='kw'>else</span>
+      <span class='id identifier rubyid_subtrair'>subtrair</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_total_pares'>total_pares</span> <span class='op'>&gt;</span> <span class='int'>67</span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_resto'>resto</span> <span class='op'>=</span> <span class='int'>10</span> <span class='op'>-</span> <span class='id identifier rubyid_resto'>resto</span> <span class='kw'>unless</span> <span class='id identifier rubyid_subtrair'>subtrair</span>
+    <span class='kw'>end</span>
+
+    <span class='kw'>while</span> <span class='id identifier rubyid_resto'>resto</span> <span class='op'>&gt;</span> <span class='int'>0</span>
+      <span class='int'>1</span><span class='period'>.</span><span class='id identifier rubyid_upto'>upto</span><span class='lparen'>(</span><span class='int'>16</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_p'>p</span><span class='op'>|</span>
+        <span class='kw'>if</span> <span class='id identifier rubyid_resto'>resto</span> <span class='op'>&gt;</span> <span class='int'>0</span>
+          <span class='kw'>if</span> <span class='id identifier rubyid_p'>p</span> <span class='op'>%</span> <span class='int'>2</span> <span class='op'>==</span> <span class='int'>0</span>
+            <span class='id identifier rubyid_p'>p</span> <span class='op'>-=</span> <span class='int'>1</span>
+            <span class='id identifier rubyid_numero'>numero</span> <span class='op'>=</span> <span class='id identifier rubyid_numeros'>numeros</span><span class='lbracket'>[</span><span class='id identifier rubyid_p'>p</span><span class='rbracket'>]</span>
+            <span class='kw'>if</span> <span class='id identifier rubyid_subtrair'>subtrair</span>
+              <span class='id identifier rubyid_numeros'>numeros</span><span class='lbracket'>[</span><span class='id identifier rubyid_p'>p</span><span class='rbracket'>]</span> <span class='op'>-=</span> <span class='int'>1</span> <span class='kw'>if</span> <span class='id identifier rubyid_numeros'>numeros</span><span class='lbracket'>[</span><span class='id identifier rubyid_p'>p</span><span class='rbracket'>]</span> <span class='op'>&gt;</span> <span class='int'>0</span>
+            <span class='kw'>else</span>
+              <span class='id identifier rubyid_numeros'>numeros</span><span class='lbracket'>[</span><span class='id identifier rubyid_p'>p</span><span class='rbracket'>]</span> <span class='op'>+=</span> <span class='int'>1</span> <span class='kw'>if</span> <span class='id identifier rubyid_numeros'>numeros</span><span class='lbracket'>[</span><span class='id identifier rubyid_p'>p</span><span class='rbracket'>]</span> <span class='op'>&lt;</span> <span class='int'>9</span>
+            <span class='kw'>end</span>
+            <span class='id identifier rubyid_resto'>resto</span> <span class='op'>-=</span> <span class='int'>1</span> <span class='kw'>if</span> <span class='id identifier rubyid_numero'>numero</span> <span class='op'>!=</span> <span class='id identifier rubyid_numeros'>numeros</span><span class='lbracket'>[</span><span class='id identifier rubyid_p'>p</span><span class='rbracket'>]</span>
+          <span class='kw'>end</span>
+        <span class='kw'>end</span>
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_numeros'>numeros</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Sun Mar 31 21:21:41 2013 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.5.2 (ruby-1.9.3).
+</div>
+
+  </body>
+</html>

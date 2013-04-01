@@ -7,10 +7,16 @@ module BlaBla
       #ToDo
     end
 
+    # Gera um nome completo de pessoa
+    # @param params [Hash] Opções: ":sexo" > :masculino ou :feminino
+    # @return [String] um nome completo de pessoa
     def self.nome params={}
       primeiro_nome(params) + " " + sobrenome(params)
     end
 
+    # Gera um primeiro nome de pessoa
+    # @param params [Hash] Opções: ":sexo" > :masculino ou :feminino
+    # @return [String] primeiro nome de pessoa
     def self.primeiro_nome params={}
       sexo = params[:sexo]
       sexo = [:masculino, :feminino].sample if sexo.nil?
@@ -18,6 +24,9 @@ module BlaBla
       BlaBla.strings("pessoa>#{sexo == :masculino ? "homens" : "mulheres" }>nomes").sample.capitalize
     end
 
+    # Gera um sobrenome de pessoa
+    # @param params [Hash] Opções: ":sexo" > :masculino ou :feminino (caso seja masculino, o nome poderá possuir um agnome, como Neto, Filho, etc)
+    # @return [String] um sobrenome de pessoa
     def self.sobrenome params={}
       sexo = params[:sexo]
       
