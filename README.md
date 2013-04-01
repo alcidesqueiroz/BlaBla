@@ -55,7 +55,7 @@ BlaBla::Bacon.frase  #=> "Flank round belly chuck mignon jowl ham beef mignon."
 
 Contribuindo
 ------------
-Se você deseja contribuir, faça um Fork do [repo](https://github.com/alcidesqueiroz/faker) no Github, faça as suas alterações e mande um pull request.
+Se você deseja contribuir, faça um Fork do [repo](https://github.com/alcidesqueiroz/BlaBla) no Github, faça as suas alterações e mande um pull request.
 
 **Nota importante**
 
