@@ -1,3 +1,4 @@
+#encoding: UTF-8
 module BlaBla
   class CPF
     # Gera um número válido de CPF

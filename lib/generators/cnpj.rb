@@ -1,3 +1,4 @@
+#encoding: UTF-8
 module BlaBla
   class CNPJ
     # Gera um número válido de CNPJ

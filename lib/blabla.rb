@@ -40,6 +40,7 @@ def require_generator(name) require_relative "./generators/#{name}"; end
 
 require_generator 'cpf'
 require_generator 'cnpj'
+require_generator 'isbn'
 require_generator 'pessoa'
 require_generator 'cartao_credito'
 require_generator 'texto/base'

@@ -66,6 +66,24 @@ module BlaBlaHelpers
     end
   end  
 
+  def validar_isbn numero
+    return false if numero.nil?
+
+    numeros = numero.split('').map &:to_i
+    
+    soma = numeros[0]
+    1.upto(11) do |n|
+      soma += numeros[n] * (n % 2 == 0 ? 1 : 3)
+    end
+    
+    modulo = soma % 10 
+
+    dv = 0
+    dv = 10 - modulo if(modulo != 0)
+
+    numeros[12] == dv
+  end  
+
   def validar_cartao_credito numero
     numero = numero.to_s unless numero.class == String
 
@@ -91,6 +109,10 @@ module BlaBlaHelpers
 
   def validar_formatacao_cnpj cnpj
     cnpj =~ /^\d{2}(\.\d{3}){2}\/\d{4}\-\d{2}$/
+  end
+
+  def validar_formatacao_isbn isbn
+    isbn =~ /^(\d{3}\-){2}\d{2}\-\d{4}\-\d$/
   end
 
   def validar_formatacao_cartao_credito numero

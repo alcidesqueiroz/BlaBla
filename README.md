@@ -18,13 +18,15 @@ Porém, para a realidade das nossas aplicações, o Faker fica devendo muita coi
 *	Gerador de Lorem Ipsum
 *	Gerador de Nomes Próprios de Pessoas
 
+###Na versão 0.0.2 foi incluído:
+*	Gerador de ISBN
+
 ###Para as próximas versões devem vir:
 
 *	Gerador de CEP	
 *	Gerador de Endereços
 *	Gerador de URLs
 *	Gerador de Email
-*	Gerador de ISBN
 *	Gerador de Telefones
 *	Gerador de Senhas
 *	Entre outras coisas ... =)
@@ -51,6 +53,8 @@ BlaBla::CartaoCredito.formatado(:bandeira => :visa)  #=> "4398 2852 4214 7717"
 BlaBla::Pessoa.nome  #=> "Viviane Alves Almeida"
 
 BlaBla::Bacon.frase  #=> "Flank round belly chuck mignon jowl ham beef mignon."
+
+BlaBla::ISBN.formatado #=> "978-597-85-2673-8"
 ```
 
 Contribuindo

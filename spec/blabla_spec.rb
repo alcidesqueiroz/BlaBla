@@ -40,6 +40,25 @@ describe BlaBla do
     end
   end  
 
+  describe "Gerador de ISBN" do
+    describe ".numero" do
+      it "deveria gerar um número de 13 dígitos" do
+        BlaBla::ISBN.numero.size.should == 13
+      end
+
+      it "deveria gerar um ISBN válido" do
+        10.times { validar_isbn(BlaBla::ISBN.numero).should be_true }
+      end
+    end
+
+    describe ".formatado" do
+      it "deveria gerar um ISBN no formato xxx-xxx-xx-xxxx-x" do
+        numero = BlaBla::ISBN.formatado
+        validar_formatacao_isbn(numero).should be_true
+      end
+    end
+  end
+
   describe "Gerador de Cartão de Crédito" do
     describe ".numero" do
       it "deveria gerar um número de 16 dígitos" do

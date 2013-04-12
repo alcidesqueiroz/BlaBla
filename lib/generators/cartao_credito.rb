@@ -1,3 +1,4 @@
+#encoding: UTF-8
 module BlaBla
   class CartaoCredito
     #Apesar de que seria perfeitamente possível elaborar um algoritmo mais sofisticado,
